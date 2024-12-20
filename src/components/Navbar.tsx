@@ -59,7 +59,7 @@ const NavbarContent = () => {
           <div className="flex items-center space-x-4 sm:space-x-6">
             <Link to="/">
               <img
-                src="src/img/wirenest.png"
+                src="public/img/wirenest.png"
                 alt="logo"
                 className="w-24 sm:w-32 h-8 sm:h-12 object-contain hover:scale-110 hover:rotate-6 transition-all duration-300 ease-in-out"
               />

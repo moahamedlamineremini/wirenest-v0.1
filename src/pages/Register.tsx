@@ -185,7 +185,7 @@ const Register = () => {
 
       <div className="hidden lg:block flex-1">
         <img
-          src="src/img/register.png"
+          src="public/img/register.png"
           alt="Mode"
           className="w-full h-full object-cover"
         />

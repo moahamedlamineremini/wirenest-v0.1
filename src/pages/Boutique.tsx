@@ -84,7 +84,7 @@ const BoutiqueContent = () => {
             {/* Image à droite */}
             <div className="relative flex justify-center md:justify-end mt-8 md:mt-0">
               <img
-                src="/src/img/senora.png"
+                src="public/img/senora.png"
                 alt="Mode"
                 className="w-[240px] sm:w-[280px] md:w-[320px] lg:w-[400px] h-auto object-contain"
                 style={{ imageRendering: 'crisp-edges' }}
@@ -122,7 +122,7 @@ const BoutiqueContent = () => {
           {/* Bloc d'image à gauche */}
           <div className="relative">
             <img
-              src="/src/img/mode_unique.png"
+              src="public/img/mode_unique.png"
               alt="Fashion showcase"
               className="rounded-lg shadow-xl w-full h-auto"
             />
@@ -173,7 +173,7 @@ const BoutiqueContent = () => {
             {/* Item 1 - Sneakers */}
             <div className="relative w-full h-[120px] sm:h-[180px] md:h-[220px] rounded-lg bg-[#F8F4F1] transform transition-all duration-300 hover:scale-[1.03] hover:shadow-sm cursor-pointer">
               <img
-                src="/src/img/samba.png"
+                src="public/img/samba.png"
                 alt="Sneakers personnalisées"
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -189,7 +189,7 @@ const BoutiqueContent = () => {
                 Vestes et <br /> manteaux stylisés
               </p>
               <img
-                src="/src/img/model.png"
+                src="public/img/model.png"
                 alt="Vestes et manteaux stylisés"
                 className="w-1/3 h-full object-cover rounded-lg ml-auto"
               />
@@ -201,7 +201,7 @@ const BoutiqueContent = () => {
                 Robes uniques
               </p>
               <img
-                src="/src/img/robe.png"
+                src="public/img/robe.png"
                 alt="Robes uniques"
                 className="w-1/3 h-full object-cover rounded-lg mx-auto"
               />
@@ -210,7 +210,7 @@ const BoutiqueContent = () => {
             {/* Item 4 - Accessoires */}
             <div className="relative w-full h-[120px] sm:h-[180px] md:h-[220px] rounded-lg bg-[#F8F4F1] transform transition-all duration-300 hover:scale-[1.03] hover:shadow-sm cursor-pointer">
               <img
-                src="/src/img/mano.png"
+                src="public/img/mano.png"
                 alt="Accessoires"
                 className="w-2/3 h-full object-cover rounded-lg ml-auto mr-2"
               />

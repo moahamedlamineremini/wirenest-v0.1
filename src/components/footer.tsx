@@ -12,7 +12,7 @@ const Footer = () => {
                     {/* Shop Section */}
                     <div className="text-center sm:text-left">
                         <img
-                            src="src/img/wirenest.png"
+                            src="public/img/wirenest.png"
                             alt="WireNest"
                             className="h-16 sm:h-20 hover:opacity-80 transition-opacity duration-300 filter brightness-110"
                         />
