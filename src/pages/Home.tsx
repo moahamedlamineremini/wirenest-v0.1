@@ -43,22 +43,30 @@ function Home() {
         <div className="max-w-7xl mx-auto">
           <h3 className="text-xl font-semibold mb-6">Les artistes de la semaine</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <DesignerCard
-              name="Alicia M"
-              image="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80"
-            />
-            <DesignerCard
-              name="Louise P"
-              image="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80"
-            />
-            <DesignerCard
-              name="Eryk B"
-              image="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80"
-            />
-            <DesignerCard
-              name="Marie K"
-              image="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80"
-            />
+            <Link to="/createur/1">
+              <DesignerCard
+                name="Alicia M"
+                image="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80"
+              />
+            </Link>
+            <Link to="/createur/2">
+              <DesignerCard
+                name="Louise P"
+                image="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80"
+              />
+            </Link>
+            <Link to="/createur/3">
+              <DesignerCard
+                name="Eryk B"
+                image="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80"
+              />
+            </Link>
+            <Link to="/createur/4">
+              <DesignerCard
+                name="Marie K"
+                image="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80"
+              />
+            </Link>
           </div>
         </div>
       </section>
