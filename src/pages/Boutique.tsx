@@ -39,7 +39,7 @@ const BoutiqueContent = () => {
       await addToFavorites(product.id);
     }
     forceUpdate({});
-    window.location.reload();
+    window.location.href = '/';
   };
 
   const handleAddToCart = (product: Product) => {
