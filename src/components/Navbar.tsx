@@ -3,7 +3,7 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { useFavorites, FavoritesProvider } from '../contexts/FavoritesContext';
 import { products } from '../data/products';
@@ -23,6 +23,7 @@ const NavbarContent = () => {
   const [favoriteProducts, setFavoriteProducts] = useState<Product[]>([]);
   const loginRef = useRef<HTMLDivElement>(null);
   const favoritesRef = useRef<HTMLDivElement>(null);
+  const location = useLocation();
 
   const { favorites } = useFavorites();
 
@@ -52,18 +53,34 @@ const NavbarContent = () => {
     setIsLoginOpen(false);
   };
 
+  useEffect(() => {
+    // Close the menu when navigating to a new page
+    setIsMenuOpen(false);
+  }, [location]);
+
   return (
     <nav className="px-4 sm:px-6 py-4 border-b">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4 sm:space-x-6">
-            <Link to="/">
-              <img
-                src="/img/wirenest.png"
-                alt="logo"
-                className="w-24 sm:w-32 h-8 sm:h-12 object-contain hover:scale-110 hover:rotate-6 transition-all duration-300 ease-in-out"
-              />
-            </Link>
+            <div className="md:hidden flex justify-center w-full">
+              <Link to="/">
+                <img
+                  src="/img/wirenest.png"
+                  alt="logo"
+                  className="w-24 h-8 object-contain hover:scale-110 hover:rotate-6 transition-all duration-300 ease-in-out"
+                />
+              </Link>
+            </div>
+            <div className="hidden md:flex items-center justify-center flex-1">
+              <Link to="/">
+                <img
+                  src="/img/wirenest.png"
+                  alt="logo"
+                  className="w-32 h-12 object-contain hover:scale-110 hover:rotate-6 transition-all duration-300 ease-in-out"
+                />
+              </Link>
+            </div>
             <div className="hidden md:flex space-x-6">
               <Link to="/boutique" className="text-gray-600 hover:text-black relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-black hover:after:w-full after:transition-all after:duration-300">Boutique</Link>
               <Link to="/plateforme" className="text-gray-600 hover:text-black relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-black hover:after:w-full after:transition-all after:duration-300">Notre plateforme</Link>
@@ -130,9 +147,9 @@ const NavbarContent = () => {
               )}
             </div>
             <Link to="/cart">
-            <ShoppingCartOutlinedIcon className="w-5 h-5 text-gray-600 hover:text-black cursor-pointer" />
-              </Link>
-            
+              <ShoppingCartOutlinedIcon className="w-5 h-5 text-gray-600 hover:text-black cursor-pointer" />
+            </Link>
+
             <div className="relative" ref={loginRef}>
               <PersonOutlineOutlinedIcon
                 className="w-5 h-5 text-gray-600 cursor-pointer hover:text-black"

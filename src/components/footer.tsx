@@ -75,13 +75,13 @@ const Footer = () => {
                                 <img src="/img/Mastercard.png" alt="Mastercard" className="h-2 sm:h-3 object-contain" />
                             </div>
                             <div className="h-4 sm:h-6 w-8 bg-gray-200 rounded-md flex items-center justify-center text-xs">
-                                <img src="/img/paypal.png" alt="PayPal" className="h-2 sm:h-3 object-contain" />
+                                <img src="/img/Paypal.png" alt="PayPal" className="h-2 sm:h-3 object-contain" />
                             </div>
                             <div className="h-4 sm:h-6 w-8 bg-gray-200 rounded-md flex items-center justify-center text-xs">
                                 <img src="/img/ApplePay.png" alt="Applepay" className="h-2 sm:h-3 object-contain" />
                             </div>
                             <div className="h-4 sm:h-6 w-8 bg-gray-200 rounded-md flex items-center justify-center text-xs">
-                                <img src="/img/Gpay.png" alt="GooglePay" className="h-2 sm:h-3 object-contain" />
+                                <img src="/img/GPay.png" alt="GooglePay" className="h-2 sm:h-3 object-contain" />
                             </div>
                         </div>
                     </div>
