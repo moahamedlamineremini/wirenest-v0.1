@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import Register from './pages/Register';
 import FAQ from './pages/FAQ';
 import Boutique from './pages/Boutique';
+import NotrePlateforme from './pages/Notreplatfrome';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/boutique" element={<Boutique />} />
+        <Route path="/plateforme" element={<NotrePlateforme />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
