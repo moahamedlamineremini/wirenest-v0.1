@@ -40,7 +40,7 @@ const NotrePlateforme: FC = () => {
         <h2 className="text-2xl font-bold mb-8">Les artistes de la semaine</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {/* Artist Card 1 */}
-          <div className="group relative">
+          <Link to="/createur/1" className="group relative">
             <img 
               src="/img/platform1.png" 
               alt="Alexis.D" 
@@ -49,10 +49,10 @@ const NotrePlateforme: FC = () => {
             <div className="absolute bottom-0 left-0 bg-white p-2">
               <p className="text-sm font-semibold text-gray-800">Alexis.D</p>
             </div>
-          </div>
+          </Link>
           
           {/* Artist Card 2 */}
-          <div className="group relative">
+          <Link to="/createur/2" className="group relative">
             <img 
               src="/img/platform2.png" 
               alt="Lulia.V" 
@@ -61,10 +61,10 @@ const NotrePlateforme: FC = () => {
             <div className="absolute bottom-0 left-0 bg-white p-2">
               <p className="text-sm font-semibold text-gray-800">Lulia.V</p>
             </div>
-          </div>
+          </Link>
 
           {/* Artist Card 3 */}
-          <div className="group relative">
+          <Link to="/createur/3" className="group relative">
             <img 
               src="/img/platform3.png" 
               alt="Leya.K" 
@@ -73,8 +73,9 @@ const NotrePlateforme: FC = () => {
             <div className="absolute bottom-0 left-0 bg-white p-2">
               <p className="text-sm font-semibold text-gray-800">Leya.K</p>
             </div>
-          </div>
+          </Link>
         </div>
+   
 
 
 {/* Notre Vision Section */}
