@@ -29,7 +29,7 @@ const NotrePlateforme: FC = () => {
         </div>
         <div>
           <img 
-            src="src/img/grospied.png" 
+            src="./src/img/grospied.png" 
             alt="Mode indépendante"
           />
         </div>
