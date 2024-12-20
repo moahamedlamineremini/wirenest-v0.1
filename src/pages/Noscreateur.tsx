@@ -137,10 +137,8 @@ interface Creator {
           </button>
         </div>
         <div className="relative mt-32">
-          <div className="absolute top-[-120px] left-0 right-0 z-10">
-            <Newsletter />
-          </div>
-          <Footer />
+        <Newsletter />
+        <Footer />
         </div>
       </div>
     );

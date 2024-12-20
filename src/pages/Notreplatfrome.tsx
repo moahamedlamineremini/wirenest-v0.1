@@ -178,11 +178,11 @@ const NotrePlateforme: FC = () => {
       </div>
       </div>
       </div>
-      <div className="relative mt-32">
-        <div className="absolute top-[-120px] left-0 right-0 z-10">
+      <div className="relative mt-32 md:mt-32">
+        <div className="absolute top-[-120px] md:top-[-120px] left-0 right-0 z-10 px-4 md:px-0">
           <Newsletter />
+          <Footer />
         </div>
-        <Footer />
       </div>
       </div>
   );

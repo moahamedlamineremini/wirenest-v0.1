@@ -23,12 +23,10 @@ const FAQ = () => {
           ))}
         </div>
       </div>
-      <div className="relative mt-32">
-        <div className="absolute top-[-120px] left-0 right-0 z-10">
-          <Newsletter />
-        </div>
+      <div className="relative mt-16">
+        <Newsletter />
         <Footer />
-      </div>
+        </div>
     </div>
   );
 };

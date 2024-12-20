@@ -9,12 +9,14 @@ import Footer from '../components/footer';
 import { Link } from 'react-router-dom';
 import { FavoritesProvider, useFavorites } from '../contexts/FavoritesContext';
 import { Product } from '../types/product';
+import { useCart } from '../contexts/CartContext';
 
 const BoutiqueContent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const { favorites, addFavorite: addToFavorites, removeFavorite: removeFromFavorites, isFavorite } = useFavorites();
   const [favoriteProducts, setFavoriteProducts] = useState<Product[]>([]);
   const [, forceUpdate] = useState({});
+  const { addToCart } = useCart();
 
   useEffect(() => {
     const updatedFavorites = products.filter(product => favorites.includes(product.id));
@@ -38,6 +40,18 @@ const BoutiqueContent = () => {
     }
     forceUpdate({});
     window.location.reload();
+  };
+
+  const handleAddToCart = (product: Product) => {
+    addToCart({
+      id: product.id,
+      name: product.name,
+      size: product.size,
+      color: product.color,
+      price: product.price,
+      image: product.image,
+      quantity: 1
+    });
   };
 
   return (
@@ -105,6 +119,7 @@ const BoutiqueContent = () => {
                 product={product}
                 isFavorite={isFavorite(product.id)}
                 onFavoriteClick={() => handleFavoriteClick(product)}
+                onAddToCart={() => handleAddToCart(product)}
               />
             ))}
           </div>
@@ -151,6 +166,7 @@ const BoutiqueContent = () => {
                 product={product}
                 isFavorite={isFavorite(product.id)}
                 onFavoriteClick={() => handleFavoriteClick(product)}
+                onAddToCart={() => handleAddToCart(product)}
               />
             ))}
           </div>
@@ -254,13 +270,8 @@ const BoutiqueContent = () => {
           </div>
         </div>
       </section>
-
-      <div className="relative mt-32">
-        <div className="absolute top-[-120px] left-0 right-0 z-10">
-          <Newsletter />
-        </div>
-        <Footer />
-      </div>
+      <Newsletter />
+      <Footer />
     </div>
   );
 };

@@ -68,6 +68,7 @@ const NavbarContent = () => {
               <Link to="/boutique" className="text-gray-600 hover:text-black relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-black hover:after:w-full after:transition-all after:duration-300">Boutique</Link>
               <Link to="/plateforme" className="text-gray-600 hover:text-black relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-black hover:after:w-full after:transition-all after:duration-300">Notre plateforme</Link>
               <Link to="/about" className="text-gray-600 hover:text-black relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-black hover:after:w-full after:transition-all after:duration-300">Nos créateurs</Link>
+              <Link to="/Cart" className="text-gray-600 hover:text-black relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-black hover:after:w-full after:transition-all after:duration-300">Panier</Link>
               <Link to="/faq" className="text-gray-600 hover:text-black relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-black hover:after:w-full after:transition-all after:duration-300">FAQ</Link>
             </div>
           </div>
@@ -128,7 +129,10 @@ const NavbarContent = () => {
                 </div>
               )}
             </div>
+            <Link to="/cart">
             <ShoppingCartOutlinedIcon className="w-5 h-5 text-gray-600 hover:text-black cursor-pointer" />
+              </Link>
+            
             <div className="relative" ref={loginRef}>
               <PersonOutlineOutlinedIcon
                 className="w-5 h-5 text-gray-600 cursor-pointer hover:text-black"
@@ -204,6 +208,7 @@ const NavbarContent = () => {
             <Link to="/boutique" className="text-gray-600 hover:text-black py-2">Boutique</Link>
             <Link to="/plateforme" className="text-gray-600 hover:text-black py-2">Notre plateforme</Link>
             <Link to="/about" className="text-gray-600 hover:text-black py-2">Nos créateurs</Link>
+            <Link to="/Cart" className="text-gray-600 hover:text-black py-2">Panier</Link>
             <Link to="/faq" className="text-gray-600 hover:text-black py-2">FAQ</Link>
             <div className="flex space-x-4 pt-4 border-t">
               <div className="relative">
@@ -214,7 +219,9 @@ const NavbarContent = () => {
                   </span>
                 )}
               </div>
-              <ShoppingCartOutlinedIcon className="w-5 h-5 text-gray-600 hover:text-black cursor-pointer" />
+              <Link to="/cart">
+                <ShoppingCartOutlinedIcon className="w-5 h-5 text-gray-600 hover:text-black cursor-pointer" />
+              </Link>
               <PersonOutlineOutlinedIcon className="w-5 h-5 text-gray-600 cursor-pointer hover:text-black" />
             </div>
           </div>

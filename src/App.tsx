@@ -9,21 +9,27 @@ import NotrePlateforme from './pages/Notreplatfrome';
 import Login from './pages/Login';
 import Noscreateur from './pages/Noscreateur';
 import Createur from './pages/Createur';
+import Cart from './pages/Cart';
+import { CartProvider } from './contexts/CartContext';
+
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/boutique" element={<Boutique />} />
-        <Route path="/plateforme" element={<NotrePlateforme />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/about" element={<Noscreateur />} />
-        <Route path="/createur/:id" element={<Createur />} />
-      </Routes>
-    </Router>
+    <CartProvider>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/boutique" element={<Boutique />} />
+          <Route path="/plateforme" element={<NotrePlateforme />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/about" element={<Noscreateur />} />
+          <Route path="/createur/:id" element={<Createur />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </Router>
+    </CartProvider>
   );
 }
 
