@@ -7,7 +7,7 @@ import FAQ from './pages/FAQ';
 import Boutique from './pages/Boutique';
 import NotrePlateforme from './pages/Notreplatfrome';
 import Login from './pages/Login';
-
+import Noscreateur from './pages/Noscreateur';
 function App() {
   return (
     <Router>
@@ -19,6 +19,7 @@ function App() {
         <Route path="/boutique" element={<Boutique />} />
         <Route path="/plateforme" element={<NotrePlateforme />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/about" element={<Noscreateur />} />
       </Routes>
     </Router>
   );
