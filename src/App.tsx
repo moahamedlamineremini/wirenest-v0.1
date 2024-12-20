@@ -8,6 +8,7 @@ import Boutique from './pages/Boutique';
 import NotrePlateforme from './pages/Notreplatfrome';
 import Login from './pages/Login';
 import Noscreateur from './pages/Noscreateur';
+import Createur from './pages/Createur';
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/plateforme" element={<NotrePlateforme />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<Noscreateur />} />
+        <Route path="/createur/:id" element={<Createur />} />
       </Routes>
     </Router>
   );
