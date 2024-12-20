@@ -12,7 +12,7 @@ const Footer = () => {
                     {/* Shop Section */}
                     <div className="text-center sm:text-left">
                         <img
-                            src="public/img/wirenest.png"
+                            src="/img/wirenest.png"
                             alt="WireNest"
                             className="h-16 sm:h-20 hover:opacity-80 transition-opacity duration-300 filter brightness-110"
                         />
@@ -69,19 +69,19 @@ const Footer = () => {
                         </p>
                         <div className="flex space-x-3 sm:space-x-4">
                             <div className="h-4 sm:h-6 w-8 bg-gray-200 rounded-md flex items-center justify-center text-xs">
-                                <img src="/src/img/Visa.png" alt="Visa" className="h-2 sm:h-3 object-contain" />
+                                <img src="/img/Visa.png" alt="Visa" className="h-2 sm:h-3 object-contain" />
                             </div>
                             <div className="h-4 sm:h-6 w-8 bg-gray-200 rounded-md flex items-center justify-center text-xs">
-                                <img src="/src/img/Mastercard.png" alt="Mastercard" className="h-2 sm:h-3 object-contain" />
+                                <img src="/img/Mastercard.png" alt="Mastercard" className="h-2 sm:h-3 object-contain" />
                             </div>
                             <div className="h-4 sm:h-6 w-8 bg-gray-200 rounded-md flex items-center justify-center text-xs">
-                                <img src="/src/img/paypal.png" alt="PayPal" className="h-2 sm:h-3 object-contain" />
+                                <img src="/img/paypal.png" alt="PayPal" className="h-2 sm:h-3 object-contain" />
                             </div>
                             <div className="h-4 sm:h-6 w-8 bg-gray-200 rounded-md flex items-center justify-center text-xs">
-                                <img src="/src/img/ApplePay.png" alt="Applepay" className="h-2 sm:h-3 object-contain" />
+                                <img src="/img/ApplePay.png" alt="Applepay" className="h-2 sm:h-3 object-contain" />
                             </div>
                             <div className="h-4 sm:h-6 w-8 bg-gray-200 rounded-md flex items-center justify-center text-xs">
-                                <img src="/src/img/Gpay.png" alt="GooglePay" className="h-2 sm:h-3 object-contain" />
+                                <img src="/img/Gpay.png" alt="GooglePay" className="h-2 sm:h-3 object-contain" />
                             </div>
                         </div>
                     </div>

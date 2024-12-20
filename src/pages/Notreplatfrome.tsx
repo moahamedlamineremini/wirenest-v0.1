@@ -29,7 +29,7 @@ const NotrePlateforme: FC = () => {
         </div>
         <div>
           <img 
-            src="public/img/grospied.png" 
+            src="/img/grospied.png" 
             alt="Mode indépendante"
           />
         </div>
@@ -42,7 +42,7 @@ const NotrePlateforme: FC = () => {
           {/* Artist Card 1 */}
           <div className="group relative">
             <img 
-              src="public/img/platform1.png" 
+              src="/img/platform1.png" 
               alt="Alexis.D" 
               className="w-full h-32 object-cover rounded-md"
             />
@@ -54,7 +54,7 @@ const NotrePlateforme: FC = () => {
           {/* Artist Card 2 */}
           <div className="group relative">
             <img 
-              src="public/img/platform2.png" 
+              src="/img/platform2.png" 
               alt="Lulia.V" 
               className="w-full h-32 object-cover rounded-md"
             />
@@ -66,7 +66,7 @@ const NotrePlateforme: FC = () => {
           {/* Artist Card 3 */}
           <div className="group relative">
             <img 
-              src="public/img/platform3.png" 
+              src="/img/platform3.png" 
               alt="Leya.K" 
               className="w-full h-32 object-cover rounded-md"
             />
@@ -84,7 +84,7 @@ const NotrePlateforme: FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="relative">
             <img 
-              src="public/img/platfrom-1-1.png" 
+              src="/img/platfrom-1-1.png" 
               alt="Urban Athletic Style" 
               className="w-full h-64 object-cover rounded-lg"
             />
@@ -96,7 +96,7 @@ const NotrePlateforme: FC = () => {
           </div>
           <div className="relative">
             <img 
-              src="public/img/platform1-2.png" 
+              src="/img/platform1-2.png" 
               alt="Creative Fashion" 
               className="w-full h-64 object-cover rounded-lg"
             />
@@ -118,14 +118,14 @@ const NotrePlateforme: FC = () => {
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="w-full md:w-1/2">
             <img 
-              src="public/img/platform2-1.png" 
+              src="/img/platform2-1.png" 
               alt="Soutenir des talents" 
               className="w-full h-[20rem] md:h-[28rem] object-cover rounded-lg"
             />
           </div>
           <div className="w-full md:w-1/2">
             <div className="flex items-center gap-4 mb-4">
-              <img src="public/img/1.png" alt="Numéro 1" className="w-16 md:w-24 h-16 md:h-24" />
+              <img src="/img/1.png" alt="Numéro 1" className="w-16 md:w-24 h-16 md:h-24" />
               <h3 className="text-xl font-semibold">Pour soutenir des talents indépendants</h3>
             </div>
             <p className="text-gray-600">
@@ -138,7 +138,7 @@ const NotrePlateforme: FC = () => {
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="w-full md:w-1/2 order-2 md:order-1">
             <div className="flex items-center gap-4 mb-4">
-              <img src="public/img/2.png" alt="Numéro 2" className="w-16 md:w-24 h-16 md:h-24" />
+              <img src="/img/2.png" alt="Numéro 2" className="w-16 md:w-24 h-16 md:h-24" />
               <h3 className="text-xl font-semibold">Pour des pièces uniques et personnalisées</h3>
             </div>
             <p className="text-gray-600">
@@ -147,7 +147,7 @@ const NotrePlateforme: FC = () => {
           </div>
           <div className="w-full md:w-1/2 order-1 md:order-2">
             <img 
-              src="public/img/platform2-2.png" 
+              src="/img/platform2-2.png" 
               alt="Pièces uniques" 
               className="w-full h-[20rem] md:h-[28rem] object-cover rounded-lg"
             />
@@ -158,14 +158,14 @@ const NotrePlateforme: FC = () => {
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="w-full md:w-1/2">
             <img 
-              src="public/img/platform2-3.png" 
+              src="/img/platform2-3.png" 
               alt="Expérience fluide" 
               className="w-full h-[20rem] md:h-[28rem] object-cover rounded-lg"
             />
           </div>
           <div className="w-full md:w-1/2">
             <div className="flex items-center gap-4 mb-4">
-              <img src="public/img/3.png" alt="Numéro 3" className="w-16 md:w-24 h-16 md:h-24" />
+              <img src="/img/3.png" alt="Numéro 3" className="w-16 md:w-24 h-16 md:h-24" />
               <h3 className="text-xl font-semibold">Pour une expérience fluide et transparente</h3>
             </div>
             <p className="text-gray-600">
